@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/indexOptional.html"
+      "dest": "/README.md"
     }
   ]
 }
