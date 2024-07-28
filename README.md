@@ -1,5 +1,5 @@
-https://rychphd.github.io/PorteusWiki/
+These wiki notes are published on [GitHub Pages](https://rychphd.github.io/PorteusWiki/)
 
-# PorteusWiki
+# Community Porteus Wiki
 
- Porteus Wiki
+ Content
