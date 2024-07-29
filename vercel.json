@@ -1,8 +1,8 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/README.md"
+      "src": "/(.*)",
+      "dest": "/README.md"
     }
   ]
 }
