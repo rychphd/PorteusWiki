@@ -102,3 +102,7 @@ git push origin gh-pages
    - Navigate to the Pages section and select the `gh-pages` branch as the source.
 
 Your MkDocs documentation should now be accessible at `https://<username>.github.io/<repository>/`. Remember to repeat steps 2-5 every time you update your documentation.
+
+
+
+https://arturomoncadatorres.com/troubleshooting-deploying-documentation-using-mkdocs/
