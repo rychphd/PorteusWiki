@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Where to Deploy are MarkDown repository to - Porteus</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Porteus</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#where-to-deploy-are-markdown-repository-to" class="nav-link">Where to Deploy are MarkDown repository to</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="where-to-deploy-are-markdown-repository-to">Where to Deploy are MarkDown repository to</h1>
+<p>https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog</p>
+<p>SvelteKit has many <a href="https://kit.svelte.dev/docs#adapters">adapters</a>, and comes pre-installed with one that will automatically detect and build properly for Netlify, Vercel, or Cloudflare Pages—which is both handy and impressive! But for static pre-rendering, we want <code>adapter-static</code>.</p>
+<p>GitHub just "bundles" Jekyll support</p>
+<p>https://squidfunk.github.io/mkdocs-material/</p>
+<p>https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/</p>
+<p>https://squidfunk.github.io/mkdocs-material/reference/math/</p>
+<p>GitHub Action for MkDocs </p>
+<p>https://squidfunk.github.io/mkdocs-material/publishing-your-site/</p>
+<p>https://github.com/marketplace/actions/deploy-mkdocs</p>
+<p>https://blog.elmah.io/hosting-a-mkdocs-driven-documentation-site-on-github-pages/</p>
+<p>https://github.com/mkdocs/mkdocs/discussions/2599</p>
+<ul>
+<li>Migrate documentation from Jekyll to <a href="https://www.mkdocs.org/">MkDocs</a></li>
+<li>Use <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> to make the docs more visually appealing</li>
+</ul>
+<p>MkDocs is written in Python and can be installed with <code>pip</code>, doesn't need native extensions and is made for writing technical documentation. Like Jekyll, it lets us write in Markdown (which can be <a href="https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/">extended</a> in multiple ways) and can be deployed to GitHub pages</p>
+<p><a href="https://www.mkdocs.org/user-guide/writing-your-docs/#internal-links">Linking to internal pages</a> is less painful than with Jekyll, and it has a great built-in search UX. It auto-generates table-of-contents for each page, which makes discovery and navigation a lot easier. Creating links to specific sections of a page is also very easy, which makes referring to our docs in Slack or GitHub issues a bit more practical.</p>
+<p>Material for MkDocs provides a more modern look, ships with loads of advanced features and is highly customizable.</p>
+<p>https://github.com/DependencyTrack/dependency-track/issues/1842</p>
+<p>MkDocs uses Jinja2, a powerful templating language</p>
+<ol>
+<li><strong>Documentation Structure</strong>: MkDocs is specifically designed for creating documentation, providing a hierarchical structure that mirrors folders and files. It automatically generates a table of contents based on the file structure, simplifying navigation. Jekyll, on the other hand, gives developers more flexibility in organizing content, making it suitable for both traditional websites and documentation. Jekyll requires manual creation of navigation menus and table of contents, which can be more time-consuming for extensive documentation projects.</li>
+<li><strong>Development Environment</strong>: Jekyll requires Ruby and its associated dependencies to be installed, which can add a layer of complexity for developers who are not familiar with Ruby development. MkDocs, on the other hand, is built on Python and is generally easier to set up and get started with. This can make MkDocs more accessible for developers who prefer Python or want a simpler setup process.</li>
+</ol>
+<p>https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions-material-for-mkdocs</p>
+<p>If GitHub Actions cannot be utilized, you can manually deploy your MkDocs project to GitHub Pages by following these steps:</p>
+<ol>
+<li><strong>Local Environment Setup</strong>:</li>
+<li>Ensure that you have Python and MkDocs installed on your local machine.</li>
+<li>Clone your GitHub repository to your local machine if it’s not already.</li>
+<li><strong>Build the Project</strong>:</li>
+<li>Open a terminal and navigate to your MkDocs project directory.</li>
+<li>Run the command <code>mkdocs build</code>. This will generate a <code>site</code> directory containing the built website.</li>
+<li><strong>Prepare for Deployment</strong>:</li>
+<li>Create a new branch in your repository named <code>gh-pages</code> if it doesn’t already exist.</li>
+<li>Delete everything in the <code>gh-pages</code> branch, as the new build will replace it.</li>
+</ol>
+<pre><code>git checkout --orphan gh-pages
+git rm -rf .
+</code></pre>
+<ol>
+<li>Move Built Files</li>
+</ol>
+<p>:</p>
+<ul>
+<li>Move the contents of the <code>site</code> directory to the root of your repository.</li>
+</ul>
+<pre><code>mv site/* .
+rmdir site
+</code></pre>
+<ol>
+<li>Commit and Push</li>
+</ol>
+<p>:</p>
+<ul>
+<li>Commit the changes and push the <code>gh-pages</code> branch to GitHub.</li>
+</ul>
+<pre><code>git add .
+git commit -m &quot;Deploy MkDocs to GitHub Pages&quot;
+git push origin gh-pages
+</code></pre>
+<ol>
+<li>Configure GitHub Pages</li>
+</ol>
+<p>:</p>
+<ul>
+<li>Go to the settings of your GitHub repository.</li>
+<li>Navigate to the Pages section and select the <code>gh-pages</code> branch as the source.</li>
+</ul>
+<p>Your MkDocs documentation should now be accessible at <code>https://&lt;username&gt;.github.io/&lt;repository&gt;/</code>. Remember to repeat steps 2-5 every time you update your documentation.</p>
+<p>https://arturomoncadatorres.com/troubleshooting-deploying-documentation-using-mkdocs/</p>
+<p>https://mkdocs.readthedocs.io/en/0.9/</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
